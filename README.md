@@ -28,10 +28,10 @@ Passo-a-passo, originalmente em inglês, disponível no link abaixo:
 
 # References and Credits
 Links de autores e conteúdos utilizados como base para o desenvolvimento e estudos
-https://github.com/CedArctic/DigiSpark-Scripts/
-https://github.com/digistump/DigisparkArduinoIntegration
-https://github.com/christofersimbar/ArduinoDuckyScript
-https://github.com/jcldf
+###### https://github.com/CedArctic/DigiSpark-Scripts/
+###### https://github.com/digistump/DigisparkArduinoIntegration
+###### https://github.com/christofersimbar/ArduinoDuckyScript
+###### https://github.com/jcldf
 
 # Youtube
 Demonstração do script para coleta de senhas Wifi exportas via csv e enviadas para o e-mail, no vídeo linkado abaixo:
