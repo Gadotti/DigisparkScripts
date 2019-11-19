@@ -1,5 +1,5 @@
  # Arduino Digispark
-Scripts para serem usados com Arduino Digispark, dispositivo que emula a interface de um teclado permitindo automatizar qualquer ação que seria realizado através de um teclado normal, porém a uma velocidade e precisam incomparáveis com a de qualquer ação manual.
+Scripts para serem usados com Arduino Digispark, dispositivo que emula a interface de um teclado permitindo automatizar qualquer ação que seria realizado através de um teclado normal, porém a uma velocidade e precisão incomparáveis com a de qualquer ação manual.
 ![alt text](https://github.com/Gadotti/DigisparkScripts/blob/master/Digispark.jpg "The DigiSpark")
 
 # Why this?
