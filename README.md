@@ -8,23 +8,23 @@ Não obtive sucesso utilizando outras soluções para o mapeamento, então a par
 
 # QuickStart
 Guia passo-a-passo para montar o ambiente de desenvolvimento.
-#### 1. Instalar os drivers do arduino
+1. Instalar os drivers do arduino
 > https://github.com/digistump/DigistumpArduino/releases
 
 2. Instalar a IDE do arduino
 > https://www.arduino.cc/en/main/software
 
-3. Once the Arduino IDE is downloaded then open it up and then, go to File -> Preferences. In the input field named “Additional Boards Manager URLs” enter the following URL.
-http://digistump.com/package_digistump_index.json
+3. Abra a IDE e vá para o menu **File -> Preferences**. Insira a URL abaixo no campo **Additional Boards Manager URLs**
+> http://digistump.com/package_digistump_index.json
 
-4. Once, done with the following then, go to Tools -> Board -> Boards Manager. Here click on the Search Filter and type in Digistump AVR Boards the package will appear below and then click on install in the right corner.
+4. Assim que concluído, vá para o menu **Board -> Boards Manager**. Clique no campo de pesquisa e digite **Digistump AVR Boards**. O pacote irá aparece abaixo e então clique no botão para instalar.
 
-5. This is the last step that you need to carry out before you begin to program, go to Tools -> Board. Scroll down till you see the option of Digispark (Default — 16.5mhz) and then click on it to select it.
-This is the steps you need to carry out to properly set up your system to work accordingly as you code on the Arduino IDE. This setup might take a bit of time but it can be used to automate a lot of settings in an incredibly small amount of time saving a lot of precious time that you might not want to lose during a pen-test or something of that nature.
+5. Antes de você iniciar qualquer programa é importante ir até o menu **Tools -> Board**. Navegue para baixo até que ver a opção **Digispark (Default — 16.5mhz)** e então a selecione.
 
-6. Tools > Programmer > USBtinyISP
+6. Para precaução, vá até o menu **Tools > Programmer** e altere para a opação **USBtinyISP**
 
-> Originalmente em https://digistump.com/wiki/digispark/tutorials/connecting
+Passo-a-passo, originalmente em inglês, disponível no link abaixo:
+> https://digistump.com/wiki/digispark/tutorials/connecting
 
 # References and Credits
 Links de autores e conteúdos utilizados como base para o desenvolvimento e estudos
@@ -32,3 +32,7 @@ Links de autores e conteúdos utilizados como base para o desenvolvimento e estu
 > https://github.com/digistump/DigisparkArduinoIntegration
 > https://github.com/christofersimbar/ArduinoDuckyScript
 > https://github.com/jcldf
+
+# Youtube
+Demonstração do script para coleta de senhas Wifi exportas via csv e enviadas para o e-mail, no vídeo linkado abaixo:
+> https://youtu.be/uzV_kIC-1_o
