@@ -26,6 +26,23 @@ Guia passo-a-passo para montar o ambiente de desenvolvimento.
 Passo-a-passo, originalmente em inglês, disponível no link abaixo:
 > https://digistump.com/wiki/digispark/tutorials/connecting
 
+# Scripts
+
+###### Create_Account
+1. Abre um CMD com privilégios de administrador
+2. Realiza a criação de um novo usuário no windows
+3. Atribui o privilégio de administrador ao novo usuário
+
+###### NC_ReverseShell
+1. Abre o CMD e conecta via netcat entregando um shell reverso
+2. Abre uma tela fake de windows update para esconder o shell
+
+###### WiFi_Grabber_ToMail
+1. Coleta os nomes e senhas wifi armazenadas na computador
+2. Exporta os dados em um arquivo csv
+3. Envia o arquivo csv por e-mail
+4. Exclui o arquivo csv da máquina
+
 # References and Credits
 Links de autores e conteúdos utilizados como base para o desenvolvimento e estudos
 ###### https://github.com/CedArctic/DigiSpark-Scripts/
