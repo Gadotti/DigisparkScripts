@@ -76,7 +76,7 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x36|DE_MOD_SHIFT_LEFT, //0x64,      // <
                 0x2E, //0x27|DE_MOD_SHIFT_LEFT,          // =
                 0x37|DE_MOD_SHIFT_LEFT, //0x64|DE_MOD_SHIFT_LEFT,      // >
-                0x2D|DE_MOD_SHIFT_LEFT,      // ?
+                KEY_W|DE_MOD_ALT_RIGHT, //0x2D|DE_MOD_SHIFT_LEFT,      // ?
                 0x1f|DE_MOD_SHIFT_LEFT, //0x14|DE_MOD_ALT_RIGHT,      // @ 
                 0x04|DE_MOD_SHIFT_LEFT,      // A
                 0x05|DE_MOD_SHIFT_LEFT,      // B
@@ -105,7 +105,7 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x1c|DE_MOD_SHIFT_LEFT, //0x1d|DE_MOD_SHIFT_LEFT,      // Y
                 0x1d|DE_MOD_SHIFT_LEFT, //0x1c|DE_MOD_SHIFT_LEFT,      // Z
                 0x30, //0x25|DE_MOD_ALT_RIGHT,          // [
-                0x2d|DE_MOD_ALT_RIGHT,          // bslash
+                0x64, //0x2d|DE_MOD_ALT_RIGHT,          // bslash
                 0x32, //0x26|DE_MOD_ALT_RIGHT,          // ]
                 0x35,    // ^
                 0x2D|DE_MOD_SHIFT_LEFT, //0x38|DE_MOD_SHIFT_LEFT,    // _
@@ -147,10 +147,19 @@ const uint16_t _ascii_de_map[128] PROGMEM =
 class DigiKeyboardDevicePtBr : public DigiKeyboardDevice{
     public:
     size_t write(uint8_t chr) {
-        unsigned int temp = pgm_read_word_near(_ascii_de_map + chr);
-        unsigned char low = temp & 0xFF;
-        unsigned char high = (temp >> 8) & 0xFF;
-        sendKeyStroke(low,high);
+
+        //çÇ
+        if (chr == 195) {
+          sendKeyStroke(0x33); 
+          //sendKeyStroke(0x33, MOD_SHIFT_LEFT);
+        }
+        else {          
+          unsigned int temp = pgm_read_word_near(_ascii_de_map + chr);          
+          unsigned char low = temp & 0xFF;
+          unsigned char high = (temp >> 8) & 0xFF;
+          sendKeyStroke(low,high);
+        }
+        
         return 1;
     }
     void sendKeyReport(uchar *array,const unsigned int size){
