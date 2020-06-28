@@ -1,3 +1,5 @@
+//Mapeado por Eduardo Gadotti https://github.com/Gadotti em 27/07/2020
+
 #include "DigiKeyboard.h"
 #ifndef DIGIKEYBOARDDE_H
 #define DIGIKEYBOARDDE_H
