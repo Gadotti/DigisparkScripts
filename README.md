@@ -28,6 +28,17 @@ Passo-a-passo, originalmente em inglês, disponível no link abaixo:
 
 # Scripts
 
+###### LayoutKeyboardTest
+1. Abre um notepad e testa o layout do teclado
+2. Imprime o texto:
+  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  abcdefghijklmnopqrstuvwxyz
+  1234567890
+  !@#$%&*()_+=-
+  []{}\\|;:',./<>?
+  ççÇÇ
+3. A versão atual imprime o Ç (maiusculo) como ç (minúsculo)
+
 ###### Create_Account
 1. Abre um CMD com privilégios de administrador
 2. Realiza a criação de um novo usuário no windows
