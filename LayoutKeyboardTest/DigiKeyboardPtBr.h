@@ -158,10 +158,6 @@ class DigiKeyboardDevicePtBr : public DigiKeyboardDevice{
           unsigned char low = temp & 0xFF;
           unsigned char high = (temp >> 8) & 0xFF;
           sendKeyStroke(low,high);
-  
-          //Esta linha está rodando no código de quem abriu a issue, que causa a divergencia tão grande
-          //uint8_t data = pgm_read_byte_near(ascii_to_scan_code_table + (chr - 8));
-          //sendKeyStroke(data & 0b01111111, data >> 7 ? MOD_SHIFT_RIGHT : 0 | (data << 1) >> 7 ? MOD_ALT_RIGHT : 0);        
         }
         
         return 1;
